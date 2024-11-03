@@ -1,0 +1,14 @@
+@startuml
+allowmixing
+package "App Components" {
+  component App {
+    App --> UserContextProvider
+  }
+  component UserContextProvider {
+    UserContextProvider --> Home
+    UserContextProvider --> About
+  }
+  component Home
+  component About
+}
+@enduml

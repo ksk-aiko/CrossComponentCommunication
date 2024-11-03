@@ -1,0 +1,13 @@
+@startuml
+actor User
+participant Home
+participant About
+participant UserContext
+
+User -> Home : Visits Home
+Home -> UserContext : Display userName
+User -> About : Navigates to About
+About -> UserContext : Display userName
+User -> About : Clicks Change User Name
+About -> UserContext : Updates userName
+@enduml

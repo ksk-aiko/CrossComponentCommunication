@@ -1,0 +1,22 @@
+@startuml
+package "Context" {
+    class UserContextProvider {
+        - userName: string = "初期ユーザー"
+        + setUserName(newName: string): void
+    }
+    UserContextProvider --> Home : provides context
+    UserContextProvider --> About : provides context
+}
+
+package "Components" {
+    class Home {
+        + render(): JSX
+    }
+    class About {
+        + render(): JSX
+        + handleChangeUserName(): void
+    }
+    Home --> UserContextProvider : useContext
+    About --> UserContextProvider : useContext
+}
+@enduml

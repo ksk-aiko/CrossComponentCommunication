@@ -1,0 +1,8 @@
+@startuml
+actor User
+rectangle App {
+  User --> (View Home Page)
+  User --> (Navigate to About Page)
+  User --> (Change User Name)
+}
+@enduml

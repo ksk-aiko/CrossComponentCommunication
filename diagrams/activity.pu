@@ -1,0 +1,13 @@
+@startuml
+|User|
+start
+:View Home Page;
+if (Navigate to About Page?) then (yes)
+  :View About Page;
+  if (Change User Name?) then (yes)
+    :Prompt for New User Name;
+    :Update User Name in Context;
+  endif
+endif
+stop
+@enduml
