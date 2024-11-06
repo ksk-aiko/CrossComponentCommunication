@@ -1,0 +1,49 @@
+/* App.css */
+
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* ナビゲーションバーのスタイル */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* コンテンツのスタイル */
+.container {
+    padding: 2rem;
+    background-color: white;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ボタンのスタイル */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { UserContext } from './UserContextProvider';
+import './style.css';
 
 const About = () => {
     const { userName, updateUserName } = useContext(UserContext);

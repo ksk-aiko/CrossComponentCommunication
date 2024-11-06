@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import UserContextProvider from './UserContextProvider';
 import Home from './Home';
 import About from './About';
+import './style.css';
 
 function App() {
     return (
